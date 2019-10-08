@@ -23,7 +23,6 @@ public class Student {
         return grades;
     }
 
-
     public void addGrade(int grade) {
         this.grades.add(grade);
     }
