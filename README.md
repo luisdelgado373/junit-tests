@@ -27,7 +27,7 @@ We will follow the best practices of TDD and we will create our tests first and 
     - The `Student` class should have the following methods:
     ```java
         // returns the student's id
-        public long getId();  
+        public long getId();
         // returns the student's name
         public String getName();
         // adds the given grade to the grades list
