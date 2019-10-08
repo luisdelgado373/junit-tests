@@ -19,6 +19,17 @@ public class CohortTest {
     }
 
     @Test
+    public void testIfListOfStudentsIsUpdated() {
+        ceres.addStudent(student1);
+        ceres.addStudent(student2);
+        ceres.addStudent(student3);
+
+        assertEquals("Tom",ceres.getStudents().get(0).getName());
+        assertEquals("Jerry",ceres.getStudents().get(1).getName());
+        assertEquals("Spike",ceres.getStudents().get(2).getName());
+    }
+
+    @Test
     public void testIfStudentCanBeAdded() {
         ceres.addStudent(student1);
         assertSame(1,ceres.getStudents().size());
