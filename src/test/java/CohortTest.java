@@ -16,9 +16,6 @@ public class CohortTest {
         student2 = new Student(2,"Jerry");
         student3 = new Student(3,"Spike");
         ceres = new Cohort();
-        ceres.addStudent(student1);
-        ceres.addStudent(student2);
-        ceres.addStudent(student3);
     }
 
     @Test
@@ -33,6 +30,9 @@ public class CohortTest {
 
     @Test
     public void testIfCohortHasCorrectAverage() {
+        ceres.addStudent(student1);
+        ceres.addStudent(student2);
+        ceres.addStudent(student3);
         student1.addGrade(50);
         student2.addGrade(50);
         student3.addGrade(50);
